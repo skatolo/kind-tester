@@ -10,8 +10,8 @@ jobs:
       - name: get kind and kubectl
         run: |
           arkade get kind kubectl
-          kubectl version
-          $HOME/.arkade/bin/kubectl version
+          kubectl version --client=true
+          $HOME/.arkade/bin/kubectl version --client=true
       - name: Install Kubernetes kind
         run: |
           mkdir -p $HOME/.kube/
