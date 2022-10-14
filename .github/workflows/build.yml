@@ -6,7 +6,7 @@ jobs:
     runs-on: actuated
     steps:
       - name: get arkade
-        uses: alexellis/setup-arkade@v1
+        uses: alexellis/setup-arkade@v2
       - name: get kind and kubectl
         run: |
           arkade get kind kubectl
