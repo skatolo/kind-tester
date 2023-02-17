@@ -3,7 +3,7 @@ name: build
 on: push
 jobs:
   start-kind:
-    runs-on: actuated
+    runs-on: actuated-aarch64
     steps:
       - uses: actions/checkout@master
         with:
