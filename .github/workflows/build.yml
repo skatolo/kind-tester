@@ -31,6 +31,10 @@ jobs:
       - name: Install ingress-nginx
         run: arkade install ingress-nginx
 
+      # For debug and troubleshooting, always show the output of the kubelet
+      # to find missing Kernel modules or errors in the system image 
+      # configuration.
       - name: Show kubelet logs
+        if: always()
         run: docker exec kind-control-plane journalctl -u kubelet
 
