@@ -37,3 +37,4 @@ jobs:
       - name: Show kubelet logs
         if: always()
         run: docker exec kind-control-plane journalctl -u kubelet
+
