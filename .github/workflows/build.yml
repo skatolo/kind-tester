@@ -3,7 +3,7 @@ name: build
 on: push
 jobs:
   start-kind:
-    runs-on: actuated
+    runs-on: actuated-2cpu-2gb
     steps:
       - uses: actions/checkout@master
         with:
